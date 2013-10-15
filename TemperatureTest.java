@@ -12,10 +12,19 @@ public class TemperatureTest {
   // Add multiple tests to check all functions of
   // {@Code Temperature} class.
 
-  // @Test
-  // public void .... (){
-  //    ...
-  // }
+ public void getUnits (){
+		Temperature test = new Temperature(0, Temperature.Units.CELSIUS);  //Tests to see if we get CELSIUS
+		Temperature.Units result = test.getUnits();
+		assertEquals(result, Temperature.Units.CELSIUS);
+		
+		emperature test1 = new Temperature(0, Temperature.Units.FAHRENHEIT); //Tests to see if we get FAHRENHEIT
+		Temperature.Units result1 = test1.getUnits();
+		assertEquals(result1, Temperature.Units.FAHRENHEIT);
+		
+		Temperature test2 = new Temperature(0, Temperature.Units.KELVIN); //Tests to see if we get KELVIN
+		Temperature.Units result2 = test2.getUnits();
+		assertEquals(result2, Temperature.Units.KELVIN);
+		}
 
   // @Test
   // public void .... (){
