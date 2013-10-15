@@ -131,8 +131,8 @@ public class Temperature {
    * in a consistent manner.
    * @param units the new {@code Units} 
    */
-  public void changeUnits(Units units) {
-      this.units = units;
+  public Units changeUnits(Units units) {
+      return this.units = units;
   }
 
   /** 
